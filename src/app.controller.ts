@@ -1,14 +1,17 @@
-import { Controller, Get } from '@nestjs/common';
-import { AppService } from './app.service';
+
+import { Controller, Get, Render } from '@nestjs/common';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
-
   @Get()
-  home(){
-    this.appService.getAll();
+  @Render('index')
+  root() {
+    return { message: 'Hello world!' };
   }
-  
+
+  @Get('/a.hbs')
+  @Render('index')
+  boot(){
+    return {message: 'hello world'};
+  }
 }
-                         
