@@ -1,7 +1,18 @@
-h1 {
-    color: red;
+body {
+    margin: 0px;
+    padding: 0px;
 }
 
-.hi {
-    color: blue;
+.top_bar {
+    background-color: #e53254;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    text-size-adjust: 100%;
+    background-position-x: x-start;
 }
