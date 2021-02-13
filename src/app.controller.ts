@@ -9,8 +9,14 @@ export class AppController {
     return { message: 'Hello world!' };
   }
 
-  @Get('/a.hbs')
+  @Get('/index.hbs')
   @Render('index')
+  root_e() {
+    return { message: 'Hello world!' };
+  }
+
+  @Get('/a.hbs')
+  @Render('a')
   boot(){
     return {message: 'hello world'};
   }
